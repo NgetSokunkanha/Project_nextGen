@@ -79,7 +79,7 @@ h3 {
     border-radius: 10px;
     padding: 15px;
     text-align: center;
-    background-color: #f9f9f9;
+    background-color: rgb(222, 240, 247);
     flex-direction:  column;
 }
 
@@ -91,5 +91,14 @@ h3 {
 
 .products p {
     margin: 5px;
-    font-family: Arial, sans-serif;
+}
+
+.namePro {
+    font-size: 20px;
+    background-color: white;
+}
+
+.pricePro {
+    display: flex;
+    justify-items: flex-start
 }
