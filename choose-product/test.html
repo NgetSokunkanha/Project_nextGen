@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <header>
+    <div class="logo">GLOWE</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Search</a>
+      <a href="#">Personal care</a>
+      <a href="#">About us</a>
+      <a href="#">Contact us</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="product-images">
+      <img src="image1.webp" alt="Facial Soap Moringa" class="main" id="mainImage">
+      <div class="thumbs">
+        <img src="thumb1.jpg" alt="">
+        <img src="thumb2.jpg" alt="">
+        <img src="thumb3.jpg" alt="">
+        <img src="thumb4.jpg" alt="">
+      </div>
+    </div>
+    <div class="product-details">
+      <h2>Facial Soap - Moringa</h2>
+      <div class="benefits">
+        <b>Key Benefits:</b>
+        <ul>
+          <li>Cleanse</li>
+          <li>Anti-age</li>
+          <li>Nourish</li>
+        </ul>
+      </div>
+      <div class="quantity">
+        <button id="decrease">-</button>
+        <span id="quantity">1</span>
+        <button id="increase">+</button>
+      </div>
+      <div class="price" id="price">$6.50</div>
+      <button class="add-cart" id="addToCart">ADD TO CART - $6.50</button>
+
+      <div class="info">
+        <p><b>Ingredients and Benefits</b><br>
+          Moringa: nourishing and anti-aging properties.<br>
+          Shea Butter: deep hydration of the skin.</p>
+        <p><b>Skin Types</b><br>
+          For all skin types</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="related">
+    <div class="related-item">
+      <img src="body-lotion.jpg" alt="">
+      <p>Body Lotion - Moringa</p>
+      <span>$20.00</span>
+    </div>
+    <div class="related-item">
+      <img src="soap.jpg" alt="">
+      <p>Saponem Herbal Soap 100g</p>
+      <span>$4.50</span>
+    </div>
+    <div class="related-item">
+      <img src="cream.jpg" alt="">
+      <p>Day Facial Cream - Moringa</p>
+      <span>$15.00</span>
+    </div>
+    <div class="related-item">
+      <img src="butter.jpg" alt="">
+      <p>Body Butter - White Turmeric and Ylang Ylang</p>
+      <span>$15.00</span>
+    </div>
+  </div>
+
+  <footer></footer>
+   <script>
+    // Quantity handling
+    const decreaseBtn = document.getElementById("decrease");
+    const increaseBtn = document.getElementById("increase");
+    const quantityEl = document.getElementById("quantity");
+    const priceEl = document.getElementById("price");
+    const addToCartBtn = document.getElementById("addToCart");
+
+    let quantity = 1;
+    const unitPrice = 6.50;
+
+    function updatePrice() {
+      priceEl.textContent = "$" + (unitPrice * quantity).toFixed(2);
+      addToCartBtn.textContent = "ADD TO CART - $" + (unitPrice * quantity).toFixed(2);
+    }
+
+    decreaseBtn.addEventListener("click", () => {
+      if (quantity > 1) {
+        quantity--;
+        quantityEl.textContent = quantity;
+        updatePrice();
+      }
+    });
+
+    increaseBtn.addEventListener("click", () => {
+      quantity++;
+      quantityEl.textContent = quantity;
+      updatePrice();
+    });
+
+    // Thumbnail image switching
+    const mainImage = document.getElementById("mainImage");
+    const thumbs = document.querySelectorAll(".thumbs img");
+
+    thumbs.forEach(thumb => {
+      thumb.addEventListener("click", () => {
+        mainImage.src = thumb.src;
+      });
+    });
+  </script>
+</body>
+</html>

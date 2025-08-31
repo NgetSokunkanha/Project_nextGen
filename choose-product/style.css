@@ -1,0 +1,117 @@
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fff;
+      color: #333;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+      border-bottom: 1px solid #ddd;
+    }
+    .logo {
+      font-family: 'Brush Script MT', cursive;
+      font-size: 28px;
+      color: #0044cc;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #000;
+      font-weight: 500;
+    }
+    .container {
+      display: flex;
+      gap: 5rem;
+      align-items: center;
+      padding: 40px;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+    .product-images {
+      flex: 2;
+    }
+    .product-images img.main {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 5px;
+    }
+    .thumbs {
+      margin-top: 10px;
+      display: flex;
+      gap: 10px;
+    }
+    .thumbs img {
+      width: 60px;
+      height: 60px;
+      object-fit: cover;
+      border: 1px solid #ddd;
+      cursor: pointer;
+    }
+    .product-details {
+      flex: 1;
+    }
+    .product-details h2 {
+      margin: 0;
+      font-size: 26px;
+    }
+    .benefits {
+      margin: 20px 0;
+    }
+    .quantity {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 15px 0;
+    }
+    .quantity button {
+      width: 30px;
+      height: 30px;
+      border: 1px solid #aaa;
+      background: #fff;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .price {
+      font-size: 18px;
+      margin: 10px 0;
+    }
+    .add-cart {
+      background: #fff;
+      border: 1px solid #0044cc;
+      padding: 12px;
+      width: 220px;
+      cursor: pointer;
+      font-weight: bold;
+      color: #0044cc;
+    }
+    .info {
+      margin-top: 20px;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+    .related {
+      display: flex;
+      justify-content: space-between;
+      padding: 40px;
+      border-top: 1px solid #ddd;
+    }
+    .related-item {
+      text-align: center;
+      width: 22%;
+    }
+    .related-item img {
+      width: 100%;
+      max-width: 150px;
+      border-radius: 5px;
+    }
+    .related-item p {
+      margin: 8px 0;
+    }
+    footer {
+      background: #0044cc;
+      height: 60px;
+    }

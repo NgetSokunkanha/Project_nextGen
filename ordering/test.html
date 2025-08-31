@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <div class="checkout-container">
+    <div class="checkout-form">
+      <h2>Contact</h2>
+      <label>Email or Phone Number</label>
+      <input type="text" placeholder="Enter email or phone">
+
+      <h2>Delivery</h2>
+      <label>Country/Region</label>
+      <select>
+        <option>Cambodia</option>
+      </select>
+
+      <div class="form-row">
+        <div>
+          <label>First Name</label>
+          <input type="text">
+        </div>
+        <div>
+          <label>Last Name</label>
+          <input type="text">
+        </div>
+      </div>
+
+      <label>Address</label>
+      <input type="text">
+
+      <div class="form-row">
+        <div>
+          <label>City</label>
+          <input type="text">
+        </div>
+        <div>
+          <label>Province (ខេត្ត)</label>
+          <select id="province">
+            <option value="phnompenh">Phnom Penh</option>
+            <option value="province">Province</option>
+          </select>
+        </div>
+      </div>
+
+      <label>Phone Number</label>
+      <input type="text">
+
+      <h2>Shipping method</h2>
+      <div class="shipping-method">
+        <div class="shipping-option">
+          <span>Inside Phnom Penh (ក្នុងក្រុងភ្នំពេញ)</span>
+          <span>$1.50</span>
+        </div>
+        <div class="shipping-option">
+          <span>Province (ខេត្ត)</span>
+          <span>$2.00</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="order-summary">
+      <h3>Order Summary</h3>
+      <div class="summary-item">
+        <span>Facial Soap - Moringa</span>
+        <span id="product-price">$6.50</span>
+      </div>
+      <div class="summary-item">
+        <span>Subtotal</span>
+        <span id="subtotal">$6.50</span>
+      </div>
+      <div class="summary-item">
+        <span>Shipping</span>
+        <span id="shipping">$1.50</span>
+      </div>
+      <div class="total">
+        <span>Total</span>
+        <span id="total">USD $8.00</span>
+      </div>
+      <button class="complete-order">Complete Order</button>
+    </div>
+  </div>
+
+  <script>
+    const provinceSelect = document.getElementById("province");
+    const shippingEl = document.getElementById("shipping");
+    const totalEl = document.getElementById("total");
+
+    const productPrice = 6.50;
+
+    provinceSelect.addEventListener("change", function() {
+      let shipping = (this.value === "phnompenh") ? 1.50 : 2.00;
+      shippingEl.textContent = `$${shipping.toFixed(2)}`;
+
+      let total = productPrice + shipping;
+      totalEl.textContent = `USD $${total.toFixed(2)}`;
+    });
+    </script>
+</body>
+</html>
