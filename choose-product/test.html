@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+   <div class="header">
+        <h1 id="logo"> GLOWE </h1>
+        <button>Home</button>
+        <button>Search</button>
+        <button>Personal care</button>
+        <button>About us</button>
+        <button>Contact us</button>
+        <span class="divider"> </span>
+        <div class="headerEnd">
+            <button id="signup">Sign up</button>
+            <button id="login">Log in</button>
+        </div>
+    </div>
+
+  <div class="container">
+    <div class="product-images">
+      <img src="image1.webp" alt="Facial Soap Moringa" class="main" id="mainImage" >
+      <div class="small-image">
+        <img src="image2.webp" alt="">
+        <img src="image3.avif" alt="">
+        <img src="image4.webp" alt="">
+        <img src="image5.avif" alt="">
+      </div>
+    </div>
+    
+    <div class="product-details">
+      <h2>Facial Soap - Moringa</h2>
+      <div class="benefits">
+        <b>Key Benefits:</b>
+        <ul>
+          <li>Cleanse</li>
+          <li>Anti-age</li>
+          <li>Nourish</li>
+        </ul>
+      </div>
+      <div class="quantity">
+        <button id="decrease">-</button>
+        <span id="quantity">1</span>
+        <button id="increase">+</button>
+      </div>
+      <div class="price" id="price">$6.50</div>
+      <button class="add-cart" id="addToCart">ADD TO CART - $6.50</button>
+
+      <div class="info">
+        <p><b>Ingredients and Benefits</b><br>
+          Moringa: nourishing and anti-aging properties.<br>
+          Shea Butter: deep hydration of the skin.</p>
+        <p><b>Skin Types</b><br>
+          For all skin types</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="related">
+    <div class="related-item1">
+      <img src="pic1.webp" >
+      <p>Body Lotion - Moringa</p>
+      <span>$20.00</span>
+    </div>
+    <div class="related-item2">
+      <img src="pic2.webp" >
+      <p>Saponem Herbal Soap 100g</p>
+      <span>$4.50</span>
+    </div>
+    <div class="related-item3">
+      <img src="pic3.webp" >
+      <p>Day Facial Cream - Moringa</p>
+      <span>$15.00</span>
+    </div>
+    <div class="related-item4">
+      <img src="pic4.webp" >
+      <p>Body Butter - White Turmeric and Ylang Ylang</p>
+      <span>$15.00</span>
+    </div>
+  </div>
+
+
+   <script>
+    const decreaseBtn = document.getElementById("decrease");
+    const increaseBtn = document.getElementById("increase");
+    const quantityEl = document.getElementById("quantity");
+    const priceEl = document.getElementById("price");
+    const addToCartBtn = document.getElementById("addToCart");
+
+    let quantity = 1;
+    const unitPrice = 6.50;
+
+    function updatePrice() {
+      priceEl.textContent = "$" + (unitPrice * quantity).toFixed(2);
+      addToCartBtn.textContent = "ADD TO CART - $" + (unitPrice * quantity).toFixed(2);
+    }
+
+    decreaseBtn.addEventListener("click", () => {
+      if (quantity > 1) {
+        quantity--;
+        quantityEl.textContent = quantity;
+        updatePrice();
+      }
+    });
+
+    increaseBtn.addEventListener("click", () => {
+      quantity++;
+      quantityEl.textContent = quantity;
+      updatePrice();
+    });
+    const mainImage = document.getElementById("mainImage");
+    const smallImage = document.querySelectorAll("small-image img");
+
+    smallImage.forEach(smallImage => {
+      smallImage.addEventListener("click", () => {
+        mainImage.src =smallImage.src;
+      });
+    });
+  </script>
+</body>
+</html>
