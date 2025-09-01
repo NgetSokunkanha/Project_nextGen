@@ -1,0 +1,125 @@
+  body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fff;
+      color: #333;
+    }
+
+    .checkout-container {
+      background-color: white;
+      display: flex;
+      flex-direction: row; /* force side by side */
+      justify-content: space-between;
+      max-width: 1100px;
+      margin: 40px auto;
+      gap: 40px;
+      padding: 0 20px;
+      align-items: flex-start;
+    }
+
+    /* Left Side - Form */
+    .checkout-form {
+      flex: 2;
+      min-width: 60%;
+    }
+
+    h2 {
+      font-size: 20px;
+      margin: 20px 0 10px;
+    }
+
+    label {
+      display: block;
+      margin: 8px 0 4px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 10px;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .form-row {
+      display: flex;
+      gap: 15px;
+    }
+    .form-row div {
+      flex: 1;
+    }
+
+    .shipping-method {
+      margin-top: 20px;
+      padding: 15px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+    }
+
+    .shipping-option {
+      display: flex;
+      justify-content: space-between;
+      padding: 8px 0;
+      font-size: 14px;
+    }
+
+    /* Right Side - Order Summary */
+    .order-summary {
+      flex: 1;
+      min-width: 300px;
+      border: 1px solid #eee;
+      border-radius: 8px;
+      padding: 20px;
+      background-color: #6dcff2;
+    }
+
+    .order-summary h3 {
+      font-size: 18px;
+      margin-bottom: 20px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 10px;
+      background: #6bc2f1;
+    }
+
+    .summary-item {
+      display: flex;
+      justify-content: space-between;
+      margin: 8px 0;
+      font-size: 14px;
+      background-color: aqua;
+    }
+
+    .total {
+      font-weight: bold;
+      font-size: 16px;
+      border-top: 1px solid #ddd;
+      margin-top: 10px;
+      padding-top: 10px;
+    }
+
+    .complete-order {
+      margin-top: 20px;
+      width: 100%;
+      padding: 12px;
+      font-size: 16px;
+      font-weight: bold;
+      color: rgb(56, 99, 230);
+      background-color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .complete-order:hover {
+      background-color: #333;
+    }
+
+    /* Stack only on small screens */
+    @media (max-width: 768px) {
+      .checkout-container {
+        flex-direction: column;
+      }
+    }

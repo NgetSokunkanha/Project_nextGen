@@ -1,0 +1,179 @@
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fff;
+      color: #333;
+    }
+    header {
+      display: grid;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 60px;
+      border-bottom: 1px solid #ddd;
+    }
+    .logo {
+      font-family: 'Brush Script MT', cursive;
+      font-size: 30px;
+      color: #0044cc;
+    }
+
+   #logo {
+    color: #1640bd;
+    margin: 0px 0px 0px 30px;
+    
+}
+.header {
+    background-color: white;
+    display: flex;
+    gap: 30px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.header > button {
+    color: black;
+    background-color: white;
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+
+}
+.divider {
+    border-left: 2px solid gray;
+    height: 30px;     
+        
+}
+.headerEnd {
+    display: flex;
+    justify-content: flex-end;
+
+    
+    
+}
+#signup ,#login {
+    color: black;
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: bold;
+    border: groove;
+    border-radius: 10px;
+    background-color: snow;
+    border-color: rgb(216, 227, 232);
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+    border-color: grey;
+}
+#login {
+    margin: 0px 30px;
+}
+
+button:hover {
+    background-color: rgb(143, 208, 234);
+}
+#signup:hover, #login:hover {
+    background-color: rgb(143, 208, 234) ; 
+}
+
+    .container {
+      display: grid;
+      gap: 5px;
+      align-items:first;
+      padding: 10px;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      grid-template-columns: 100px 100px 100px;
+    }
+    .product-images {
+      flex: 1;
+    }
+    .product-images img.main {
+      width: 400px;
+      max-width: 400px;
+      border-radius: 5px;
+      
+    }
+    .small-image {
+      margin-top: 10px;
+      display: flex;
+      gap: 20px;
+    }
+    .small-image img {
+      width: 60px;
+      height: 60px;
+      object-fit: cover;
+      border: 1px solid #ddd;
+      cursor: pointer;
+    }
+    .product-details {
+      flex: 1;
+    }
+    .product-details h2 {
+      margin: 0;
+      font-size: 35px;
+      display: flex;
+      flex-direction: flex-end;
+    }
+    .benefits {
+      margin: 20px 0;
+    }
+    .quantity {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 15px 0;
+    }
+    .quantity button {
+      width: 30px;
+      height: 30px;
+      border: 1px solid #aaa;
+      background: #fff;
+      cursor: pointer;
+      font-size: 20px;
+    }
+    .price {
+      font-size: 18px;
+      margin: 10px 0;
+    }
+    .add-cart {
+      background: #fff;
+      border: 1px solid #0044cc;
+      padding: 12px;
+      width: 220px;
+      cursor: pointer;
+      font-weight: bold;
+      color: #0044cc;
+    }
+    .info {
+      margin-top: 20px;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+    .related {
+
+      padding: 20px;
+      border-top: 1px solid #ddd;
+      width: 40px;
+      height: 40px;
+      display: grid;
+      gap: 20px;
+    }
+    .related-item {
+      text-align: center;
+      width: 10%;
+    }
+    .related-item img {
+      width: 50%;
+      height: 50%;
+      max-width: 100px;
+      border-radius: 5px;
+    }
+    .related-item p {
+      margin: 10px 0;
+    }
