@@ -73,7 +73,7 @@
       border: 1px solid #eee;
       border-radius: 8px;
       padding: 20px;
-      background-color: #09d413;
+      background-color: #6dcff2;
     }
 
     .order-summary h3 {
@@ -81,7 +81,7 @@
       margin-bottom: 20px;
       border-bottom: 1px solid #ddd;
       padding-bottom: 10px;
-      background: #09d413;
+      background: #6bc2f1;
     }
 
     .summary-item {
@@ -107,7 +107,7 @@
       font-size: 16px;
       font-weight: bold;
       color: rgb(56, 99, 230);
-      background-color: black;
+      background-color: white;
       border: none;
       border-radius: 6px;
       cursor: pointer;

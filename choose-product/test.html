@@ -4,27 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-     <header>
-    <div class="logo">GLOWE</div>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">Search</a>
-      <a href="#">Personal care</a>
-      <a href="#">About us</a>
-      <a href="#">Contact us</a>
-    </nav>
-  </header>
+   <div class="header">
+        <h1 id="logo"> GLOWE </h1>
+        <button>Home</button>
+        <button>Search</button>
+        <button>Personal care</button>
+        <button>About us</button>
+        <button>Contact us</button>
+        <span class="divider"> </span>
+        <div class="headerEnd">
+            <button id="signup">Sign up</button>
+            <button id="login">Log in</button>
+        </div>
+    </div>
 
   <div class="container">
     <div class="product-images">
-      <img src="image1.webp" alt="Facial Soap Moringa" class="main" id="mainImage">
-      <div class="thumbs">
-        <img src="thumb1.jpg" alt="">
-        <img src="thumb2.jpg" alt="">
-        <img src="thumb3.jpg" alt="">
-        <img src="thumb4.jpg" alt="">
+      <img src="image1.webp" alt="Facial Soap Moringa" class="main" id="mainImage" >
+      <div class="small-image">
+        <img src="image2.webp" alt="">
+        <img src="image3.avif" alt="">
+        <img src="image4.webp" alt="">
+        <img src="image5.avif" alt="">
       </div>
     </div>
     <div class="product-details">
@@ -56,31 +60,30 @@
   </div>
 
   <div class="related">
-    <div class="related-item">
-      <img src="body-lotion.jpg" alt="">
+    <div class="related-item1">
+      <img src="pic1.webp" >
       <p>Body Lotion - Moringa</p>
       <span>$20.00</span>
     </div>
-    <div class="related-item">
-      <img src="soap.jpg" alt="">
+    <div class="related-item2">
+      <img src="pic2.webp" >
       <p>Saponem Herbal Soap 100g</p>
       <span>$4.50</span>
     </div>
-    <div class="related-item">
-      <img src="cream.jpg" alt="">
+    <div class="related-item3">
+      <img src="pic3.webp" >
       <p>Day Facial Cream - Moringa</p>
       <span>$15.00</span>
     </div>
-    <div class="related-item">
-      <img src="butter.jpg" alt="">
+    <div class="related-item4">
+      <img src="pic4.webp" >
       <p>Body Butter - White Turmeric and Ylang Ylang</p>
       <span>$15.00</span>
     </div>
   </div>
 
-  <footer></footer>
+
    <script>
-    // Quantity handling
     const decreaseBtn = document.getElementById("decrease");
     const increaseBtn = document.getElementById("increase");
     const quantityEl = document.getElementById("quantity");
@@ -108,14 +111,12 @@
       quantityEl.textContent = quantity;
       updatePrice();
     });
-
-    // Thumbnail image switching
     const mainImage = document.getElementById("mainImage");
-    const thumbs = document.querySelectorAll(".thumbs img");
+    const smallImage = document.querySelectorAll("small-image img");
 
-    thumbs.forEach(thumb => {
-      thumb.addEventListener("click", () => {
-        mainImage.src = thumb.src;
+    smallImage.forEach(smallImage => {
+      smallImage.addEventListener("click", () => {
+        mainImage.src =smallImage.src;
       });
     });
   </script>
