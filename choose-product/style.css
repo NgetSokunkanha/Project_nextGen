@@ -18,12 +18,12 @@
       color: #0044cc;
     }
 
-   #logo {
+    #logo {
     color: #1640bd;
     margin: 0px 0px 0px 30px;
     
-}
-.header {
+    }
+    .header {
     background-color: white;
     display: flex;
     gap: 30px;
@@ -31,8 +31,8 @@
     justify-content: space-between;
     align-items: center;
 
-}
-.header > button {
+    }
+    .header > button {
     color: black;
     background-color: white;
     font-family: inherit;
@@ -44,20 +44,20 @@
     cursor: pointer;
     transition: background-color 0.2s, transform 0.1s;
 
-}
-.divider {
+    }
+    .divider {
     border-left: 2px solid gray;
     height: 30px;     
         
-}
-.headerEnd {
+    }
+    .headerEnd {
     display: flex;
     justify-content: flex-end;
 
     
     
-}
-#signup ,#login {
+    }
+    #signup ,#login {
     color: black;
     font-family: inherit;
     font-size: 18px;
@@ -69,33 +69,33 @@
     cursor: pointer;
     transition: background-color 0.2s, transform 0.1s;
     border-color: grey;
-}
-#login {
+    }
+    #login {
     margin: 0px 30px;
-}
+    }
 
-button:hover {
+    button:hover {
     background-color: rgb(143, 208, 234);
-}
-#signup:hover, #login:hover {
+    }
+    #signup:hover, #login:hover {
     background-color: rgb(143, 208, 234) ; 
-}
+    }
 
     .container {
       display: grid;
       gap: 5px;
-      align-items:first;
+      align-items: center;
       padding: 10px;
-      justify-content: space-around;
-      flex-wrap: wrap;
+      justify-content: space-between;
+      
       grid-template-columns: 100px 100px 100px;
     }
     .product-images {
       flex: 1;
     }
     .product-images img.main {
-      width: 400px;
-      max-width: 400px;
+      width: 600px;
+      max-width: 600px;
       border-radius: 5px;
       
     }
@@ -105,8 +105,8 @@ button:hover {
       gap: 20px;
     }
     .small-image img {
-      width: 60px;
-      height: 60px;
+      width: 100px;
+      height: 100px;
       object-fit: cover;
       border: 1px solid #ddd;
       cursor: pointer;
@@ -116,12 +116,15 @@ button:hover {
     }
     .product-details h2 {
       margin: 0;
-      font-size: 35px;
+      font-size: 50px;
       display: flex;
       flex-direction: flex-end;
+      width: 800px;
     }
     .benefits {
       margin: 20px 0;
+      width: 700px;
+      font-size: 20px;
     }
     .quantity {
       display: flex;
@@ -152,8 +155,10 @@ button:hover {
     }
     .info {
       margin-top: 20px;
-      font-size: 14px;
-      line-height: 1.5;
+      font-size:20px;
+      line-height: 40px;
+      width: 800px;
+      
     }
     .related {
 
@@ -161,16 +166,18 @@ button:hover {
       border-top: 1px solid #ddd;
       width: 40px;
       height: 40px;
-      display: grid;
+      display: flex;
       gap: 20px;
+      
     }
     .related-item {
       text-align: center;
       width: 10%;
+      
     }
     .related-item img {
-      width: 50%;
-      height: 50%;
+      width: 100%;
+      height: 100%;
       max-width: 100px;
       border-radius: 5px;
     }

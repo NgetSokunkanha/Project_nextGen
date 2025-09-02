@@ -3,7 +3,7 @@
       margin: 0;
       padding: 0;
       background: #fff;
-      color: #333;
+      color: black;
     }
 
     .checkout-container {
@@ -22,6 +22,7 @@
     .checkout-form {
       flex: 2;
       min-width: 60%;
+      width: 400px;
     }
 
     h2 {
@@ -31,7 +32,7 @@
 
     label {
       display: block;
-      margin: 8px 0 4px;
+      margin: 8px 0 5px;
       font-size: 14px;
       font-weight: bold;
     }
@@ -46,10 +47,13 @@
 
     .form-row {
       display: flex;
-      gap: 15px;
+      gap: 30px;
+      width: 675px;
     }
     .form-row div {
       flex: 1;
+     
+     
     }
 
     .shipping-method {
@@ -73,7 +77,7 @@
       border: 1px solid #eee;
       border-radius: 8px;
       padding: 20px;
-      background-color: #6dcff2;
+      background-color: #bfecfc;
     }
 
     .order-summary h3 {
@@ -81,7 +85,7 @@
       margin-bottom: 20px;
       border-bottom: 1px solid #ddd;
       padding-bottom: 10px;
-      background: #6bc2f1;
+      
     }
 
     .summary-item {
@@ -89,7 +93,7 @@
       justify-content: space-between;
       margin: 8px 0;
       font-size: 14px;
-      background-color: aqua;
+      
     }
 
     .total {
@@ -106,7 +110,7 @@
       padding: 12px;
       font-size: 16px;
       font-weight: bold;
-      color: rgb(56, 99, 230);
+      color: rgb(116, 178, 233);
       background-color: white;
       border: none;
       border-radius: 6px;
@@ -114,12 +118,7 @@
     }
 
     .complete-order:hover {
-      background-color: #333;
+      background-color: #326ede;
     }
 
-    /* Stack only on small screens */
-    @media (max-width: 768px) {
-      .checkout-container {
-        flex-direction: column;
-      }
-    }
+  
