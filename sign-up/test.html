@@ -7,7 +7,18 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-      <div class="checkout-container">
+       <div class="header">
+        <h1 id="logo"> GLOWE </h1>
+        <button>Home</button>
+        <button>Search</button>
+        <button>Personal care</button>
+        <button>About us</button>
+        <button>Contact us</button>
+        
+        <div class="headerEnd"></div>
+    </div>
+
+    <div class="checkout-container">
     <div class="checkout-form">
       <h2>Contact</h2>
       <label>Email or Phone Number</label>
@@ -16,6 +27,12 @@
       <label>Country/Region</label>
       <select>
         <option>Cambodia</option>
+        <option>United States</option>
+        <option>China</option>
+        <option>Japan</option>
+        <option>Australia</option>
+        <option>Canada</option>
+        <option>South Korea</option>
       </select>
 
       <div class="form-row">
@@ -34,14 +51,15 @@
 
       <div class="form-row">
         <div>
-          <label>City</label>
+          <label>City (ក្រុង)</label>
           <input type="text">
         </div>
         <div>
           <label>Province (ខេត្ត)</label>
           <select id="province">
-            <option value="phnompenh">Phnom Penh</option>
-            <option value="province">Province</option>
+            <option value="BMC">Banteay Meanchey</option>
+            <option value="KP">Kompot</option>
+            <option value="BTB">Battambang</option>
           </select>
         </div>
       </div>
