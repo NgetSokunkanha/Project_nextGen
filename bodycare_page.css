@@ -110,16 +110,20 @@ h3 {
 
 
 .addCart {
-    width: 100%;
+    display: block;              
+    max-width: 90%;              
+    margin: 10px auto 0 auto;     
     color: black;
     background-color: skyblue;
     font-family: inherit;
     font-size: 18px;
     font-weight: bold;
-    padding: 0.5rem 1rem;
+    padding: 10px 0;
     border: 1px solid black;
+    border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.2s, transform 0.1s;
+    text-align: center;
 }
 
 .addCart:hover {

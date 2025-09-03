@@ -1,4 +1,12 @@
-   #logo {
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#logo {
     color: #1640bd;
     margin: 0px 0px 0px 30px;
     
@@ -64,31 +72,31 @@ h3 {
     font-size: 30px;
     
 }
-    .divider {
-    border-left: 2px solid gray;
-    height: 30px;     
+.divider {
+  border-left: 2px solid gray;
+  height: 30px;     
         
-    }
-    .headerEnd {
-    display: flex;
-    justify-content: flex-end;
+}
+.headerEnd {
+  display: flex;
+  justify-content: flex-end;
 
     
     
-    }
-    #signup ,#login {
-    color: black;
-    font-family: inherit;
-    font-size: 18px;
-    font-weight: bold;
-    border: groove;
-    border-radius: 10px;
-    background-color: snow;
-    border-color: rgb(216, 227, 232);
-    cursor: pointer;
-    transition: background-color 0.2s, transform 0.1s;
-    border-color: grey;
-    }
+}
+#signup ,#login {
+  color: black;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: bold;
+  border: groove;
+  border-radius: 10px;
+  background-color: snow;
+  border-color: rgb(216, 227, 232);
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+  border-color: grey;
+}
     #login {
     margin: 0px 30px;
     }
@@ -100,18 +108,22 @@ h3 {
     background-color: rgb(143, 208, 234) ; 
     }
 
-    .container {
-      display: grid;
-      gap: 5px;
-      align-items: center;
-      padding: 10px;
-      justify-content: space-between;
-      
-      grid-template-columns: 100px 100px 100px;
-    }
-    .product-images {
-      flex: 1;
-    }
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 2 equal sections: images and details */
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto; /* center the container */
+  align-items: flex-start;
+}
+.product-images img.main {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 5px;
+  display: block;
+}
+
     .product-images img.main {
       width: 600px;
       max-width: 600px;
@@ -138,7 +150,7 @@ h3 {
       font-size: 50px;
       display: flex;
       flex-direction: flex-end;
-      width: 800px;
+      width: 700px;
     }
     .benefits {
       margin: 20px 0;
@@ -179,16 +191,16 @@ h3 {
       width: 800px;
       
     }
-    .related {
+.related {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 3 items per row */
+  gap: 20px; /* space between products */
+  padding: 20px;
+  border-top: 1px solid #ddd;
+  max-width: 1200px;
+  margin: 0 auto; /* center the section */
+}
 
-      padding: 20px;
-      border-top: 1px solid #ddd;
-      width: 40px;
-      height: 40px;
-      display: flex;
-      gap: 20px;
-      
-    }
     .related-item {
       text-align: center;
       width: 10%;
@@ -203,3 +215,5 @@ h3 {
     .related-item p {
       margin: 10px 0;
     }
+
+  
