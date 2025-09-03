@@ -1,29 +1,9 @@
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #fff;
-      color: #333;
-    }
-    header {
-      display: grid;
-      justify-content: space-between;
-      align-items: center;
-      padding: 15px 60px;
-      border-bottom: 1px solid #ddd;
-    }
-    .logo {
-      font-family: 'Brush Script MT', cursive;
-      font-size: 30px;
-      color: #0044cc;
-    }
-
-    #logo {
+   #logo {
     color: #1640bd;
     margin: 0px 0px 0px 30px;
     
-    }
-    .header {
+}
+.header {
     background-color: white;
     display: flex;
     gap: 30px;
@@ -31,8 +11,8 @@
     justify-content: space-between;
     align-items: center;
 
-    }
-    .header > button {
+}
+.header > button {
     color: black;
     background-color: white;
     font-family: inherit;
@@ -44,7 +24,46 @@
     cursor: pointer;
     transition: background-color 0.2s, transform 0.1s;
 
-    }
+}
+.divider {
+    border-left: 2px solid gray;
+    height: 30px;     
+        
+}
+.headerEnd {
+    display: flex;
+    justify-content: flex-end;
+
+    
+    
+}
+#signup ,#login {
+    color: black;
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: bold;
+    border: groove;
+    border-radius: 10px;
+    background-color: snow;
+    border-color: rgb(216, 227, 232);
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+    border-color: grey;
+}
+#login {
+    margin: 0px 30px;
+}
+
+button:hover {
+    background-color: rgb(143, 208, 234);
+}
+#signup:hover, #login:hover {
+    background-color: rgb(143, 208, 234) ; 
+}
+h3 {
+    font-size: 30px;
+    
+}
     .divider {
     border-left: 2px solid gray;
     height: 30px;     
